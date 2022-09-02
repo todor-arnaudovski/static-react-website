@@ -1,0 +1,17 @@
+.background-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content-spacing-large {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.content-spacing-medium {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+.content-spacing-small {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}

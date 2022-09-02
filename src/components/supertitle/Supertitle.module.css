@@ -1,0 +1,35 @@
+.supertitle {
+  position: relative;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+}
+.center:before {
+  content: '';
+  height: 2px;
+  width: 80px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 50%;
+  left: -100px;
+}
+.center:after {
+  content: '';
+  height: 2px;
+  width: 80px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 50%;
+  right: -100px;
+}
+.left {
+  padding-left: 110px;
+}
+.left:before {
+  content: '';
+  height: 2px;
+  width: 80px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 50%;
+  left: 0;
+}

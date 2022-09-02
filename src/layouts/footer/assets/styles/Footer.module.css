@@ -1,0 +1,10 @@
+.footer {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.copyright {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgba(var(--color-dark));
+}
