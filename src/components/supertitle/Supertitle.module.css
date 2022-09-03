@@ -1,13 +1,14 @@
 .supertitle {
+  display: inline-block;
   position: relative;
   letter-spacing: 0.1rem;
-  display: inline-block;
+  font-size: 1.125rem;
 }
 .center:before {
   content: '';
   height: 2px;
   width: 80px;
-  background-color: var(--color-primary);
+  background-color: rgb(var(--color-primary));
   position: absolute;
   top: 50%;
   left: -100px;
@@ -16,7 +17,7 @@
   content: '';
   height: 2px;
   width: 80px;
-  background-color: var(--color-primary);
+  background-color: rgb(var(--color-primary));
   position: absolute;
   top: 50%;
   right: -100px;
@@ -28,7 +29,7 @@
   content: '';
   height: 2px;
   width: 80px;
-  background-color: var(--color-primary);
+  background-color: rgb(var(--color-primary));
   position: absolute;
   top: 50%;
   left: 0;

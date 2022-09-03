@@ -78,27 +78,26 @@ h6,
   );
 }
 /* Buttons */
-.btn:focus,
+/* .btn:focus,
 .btn:active,
 .btn:active:focus {
   box-shadow: 0 0 0 0.25rem rgba(var(--color-primary), 0.5);
-}
-.btn-primary,
+} */
+/* .btn-primary,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary:active:focus {
-  font-weight: 700;
   letter-spacing: 0.1rem;
   padding: 18px 32px;
   background-color: rgba(var(--color-primary));
   border: none;
   transition: all 0.3s ease-out;
-}
-.btn-primary:hover {
+} */
+/* .btn-primary:hover {
   background-color: rgba(var(--color-primary));
   transform: translateY(-8px);
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2) !important;
-}
+} */
 /* Card */
 .card {
   border-radius: 0;
@@ -106,29 +105,6 @@ h6,
 .card-body {
   border-radius: 0;
   padding: 0;
-}
-/* Accordion */
-.accordion-item {
-  border: none;
-}
-.accordion-item:first-of-type,
-.accordion-item:last-of-type {
-  border-radius: 0;
-}
-.accordion-button:focus {
-  box-shadow: none;
-}
-.accordion-button:not(.collapsed) {
-  background-color: #fff;
-  color: rgba(var(--color-primary));
-}
-.accordion-button:focus {
-  background-color: #fff;
-  color: rgba(var(--color-primary));
-  border-color: rgba(var(--color-primary));
-}
-.accordion-button:focus.collapsed {
-  color: #000;
 }
 /* Borders */
 .border-bottom-primary {
@@ -141,4 +117,37 @@ h6,
 }
 .form-control {
   padding: 0.775rem 1.15rem;
+}
+/* Accordion */
+/* Accordion */
+/* .accordion-item {
+  border: none;
+} */
+/* .accordion-item:first-of-type,
+.accordion-item:last-of-type {
+  border-radius: 0;
+} */
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: rgba(var(--color-primary));
+}
+.accordion-button:not(.collapsed)::after {
+  /* background-image: none; */
+}
+.accordion-button:focus {
+  background-color: #fff;
+  color: rgba(var(--color-primary));
+  border-color: rgba(var(--color-primary));
+}
+.accordion-button:focus.collapsed {
+  color: #000;
+}
+.accordion-button:hover {
+  color: rgba(var(--color-primary));
+}
+.accordion-button {
+  font-weight: 700;
 }

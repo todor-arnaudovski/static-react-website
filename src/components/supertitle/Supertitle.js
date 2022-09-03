@@ -6,7 +6,7 @@ export function Supertitle({ children, align }) {
 
   return (
     <span
-      className={`${styles.supertitle} ${styles[alignStyle]} text-uppercase mb-lg-1 mb-lg-2`}
+      className={`${styles.supertitle} ${styles[alignStyle]} text-uppercase mb-lg-2 mb-lg-3`}
     >
       {children}
     </span>

@@ -39,7 +39,7 @@ export function Hero({ children }) {
                     </p>
                   </Col>
                   <Col lg={4}>
-                    <Button variant='primary'>Побарај консултација</Button>
+                    <Button href='#' variant='primary' className='animate'>Побарај консултација</Button>
                   </Col>
                 </Row>
               </div>

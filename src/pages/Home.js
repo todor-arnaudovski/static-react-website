@@ -3,12 +3,15 @@ import backgroundImg from 'assets/images/backgrounds/background-1.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Accordion from 'react-bootstrap/Accordion';
 
-import { ContentSpacing } from 'components';
+import { ContentSpacing, MainTitle, Supertitle } from 'components';
 import { Hero, FieldsList, About } from 'features';
 // import BiographySection from './Components/Sections/BiographySection/BiographySection';
 // import WorkFieldSection from './Components/Sections/WorkFieldsSection/WorkFieldsSection';
 // import ContactSection from './Components/Sections/ContactSection/ContactSection';
+
+import { accordionData } from 'data';
 
 export function Home() {
   return (
@@ -18,9 +21,9 @@ export function Home() {
       </Hero>
       <ContentSpacing as='section' variant='large' background={backgroundImg}>
         <Container>
-          <div className='text-center'>
-            {/* <Supertitle text='Тука сме за вас' /> */}
-            <h2 className='hero-title mb-4 mb-lg-5'>Знајте ги Вашите права</h2>
+          <div className='text-center mb-4 mb-lg-5'>
+            <Supertitle align='center'>Тука сме за вас</Supertitle>
+            <MainTitle variant='normal'>Знајте ги Вашите права</MainTitle>
           </div>
           <Row className='gx-5'>
             <Col lg={6}>
@@ -48,12 +51,22 @@ export function Home() {
               </p>
             </Col>
             <Col lg={6}>
-              <h4 className='h4 mb-3 mb-lg-4'>Тука сме за сите Ваши грижи</h4>
+              <h4 className='h4 mb-3 mb-lg-4'>Одговор за сите Ваши грижи</h4>
               <p>
                 Even if you think the facts of the case aren’t in your favor,
                 having the best possible criminal representation can be.
               </p>
-              {/* <AccordionEl /> */}
+              <Accordion>
+                {accordionData &&
+                  accordionData.map((item, i) => {
+                    return (
+                      <Accordion.Item eventKey={i} key={i} bg='transparent' className='border-0'>
+                        <Accordion.Header className='font-secondary fw-bold'>{item.title}</Accordion.Header>
+                        <Accordion.Body>{item.text}</Accordion.Body>
+                      </Accordion.Item>
+                    );
+                  })}
+              </Accordion>
             </Col>
           </Row>
         </Container>

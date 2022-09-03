@@ -1,0 +1,10 @@
+// overwrite theme variables
+$primary: #936249;
+$light: #f1f1f1;
+$dark: #232b33;
+
+$btn-padding-x: 2rem;
+$btn-padding-y: 1.125rem;
+
+// import bootstrap to set changes
+@import '~bootstrap/scss/bootstrap';
