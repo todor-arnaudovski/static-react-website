@@ -1,4 +1,4 @@
-import styles from './ContentSpacing.module.css';
+import styles from './ContentSpacing.module.scss';
 
 export function ContentSpacing({ children, as, variant, background }) {
   const spacingAmount = variant ? variant : 'large';

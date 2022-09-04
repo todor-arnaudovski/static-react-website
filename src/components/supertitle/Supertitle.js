@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Supertitle.module.css';
+import styles from './Supertitle.module.scss';
 
 export function Supertitle({ children, align }) {
   const alignStyle = align ? align : 'center';

@@ -1,4 +1,4 @@
-import styles from './MainTitle.module.css';
+import styles from './MainTitle.module.scss';
 
 export function MainTitle({ children, variant }) {
   const headingLevelSize = variant ? `title-${variant}` : `title-normal`;
