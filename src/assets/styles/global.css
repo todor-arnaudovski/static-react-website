@@ -23,7 +23,7 @@ h6,
   color: rgba(var(--color-primary));
 }
 /* Navbar */
-.navbar .nav-link {
+/* .navbar .nav-link {
   transition: color 0.3s ease-out;
 }
 .navbar.navbar-dark .nav-link,
@@ -38,7 +38,7 @@ h6,
 .navbar .nav-link:focus,
 .navbar .nav-link.active {
   color: rgba(var(--color-primary));
-}
+} */
 /* Link */
 .link {
   text-decoration: none;
@@ -113,9 +113,9 @@ h6,
   background-color: #fff;
   color: rgba(var(--color-primary));
 }
-.accordion-button:not(.collapsed)::after {
-  /* background-image: none; */
-}
+/* .accordion-button:not(.collapsed)::after {
+  background-image: none;
+} */
 .accordion-button:focus {
   background-color: #fff;
   color: rgba(var(--color-primary));

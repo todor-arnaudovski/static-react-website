@@ -1,4 +1,4 @@
-import { useScrollPosition } from 'hooks';
+import { useScrollPosition, useWindowSize } from 'hooks';
 import { Link, useLocation } from 'react-router-dom';
 import { navigation } from 'data';
 import { contact } from 'data';
@@ -17,20 +17,23 @@ export function Header() {
   const scrollPosition = useScrollPosition();
   const isScrolled = scrollPosition > 0;
 
+  const windowWidth = useWindowSize().width;
+  const windowIsLarge = windowWidth > 992;
+
   return (
     <header>
       <Navbar
         collapseOnSelect
         expand='lg'
-        bg={isScrolled ? 'light' : 'transparent'}
-        variant={isScrolled ? 'light' : 'dark'}
+        bg={windowIsLarge ? (isScrolled ? 'light' : 'transparent') : 'light'}
+        variant={windowIsLarge ? (isScrolled ? 'light' : 'dark') : 'light'}
         fixed='top'
         className={isScrolled ? 'scroll' : ''}
       >
         <Container>
           <Navbar.Brand as={Link} to='/'>
             <img
-              src={isScrolled ? LogoDark : LogoLight}
+              src={windowIsLarge ? (isScrolled ? LogoDark : LogoLight) : LogoDark}
               width='180'
               className='d-inline-block align-top'
               alt='Арнаудовски'
@@ -50,7 +53,6 @@ export function Header() {
                       as={Link}
                       to={`/${item.slug}`}
                       eventKey={`/${item.slug}`}
-                      className='mx-xl-2'
                       key={i}
                     >
                       {item.title}
@@ -62,11 +64,7 @@ export function Header() {
               {contact &&
                 contact.map((item, i) => {
                   return (
-                    <Nav.Link
-                      href={`${item.type}${item.contact}`}
-                      className='mx-xl-2'
-                      key={i}
-                    >
+                    <Nav.Link href={`${item.type}${item.contact}`} key={i}>
                       {item.icon}
                       <span className='ms-2'>{item.contact}</span>
                     </Nav.Link>

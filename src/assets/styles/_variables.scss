@@ -1,0 +1,25 @@
+// overwrite theme variables
+$primary: #936249;
+$light: #f1f1f1;
+$dark: #232b33;
+$white: #fff;
+
+// overwrite navbar variables
+$navbar-nav-link-padding-x: 1rem;
+// Dark
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $primary;
+$navbar-dark-active-color: $primary;
+// Light
+$navbar-light-color: $dark;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+
+// overwrite buttons variables
+$btn-padding-x: 2rem;
+$btn-padding-y: 1.125rem;
+
+// 
+
+// import bootstrap to set changes
+@import '~bootstrap/scss/bootstrap';

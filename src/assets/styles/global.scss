@@ -1,3 +1,4 @@
+@import './variables';
 // Navbar
 .navbar {
   transition: all 0.3s ease-out;
@@ -5,8 +6,10 @@
     box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
   }
   &:not(.scroll) {
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
+    @include media-breakpoint-up(lg) {
+      padding-top: 1.8rem;
+      padding-bottom: 1.8rem;
+    }
   }
 }
 // Buttons
