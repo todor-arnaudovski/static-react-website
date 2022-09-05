@@ -1,14 +1,16 @@
 import { useScrollPosition, useWindowSize } from 'hooks';
 import { Link, useLocation } from 'react-router-dom';
-import { navigation } from 'data';
-import { contact } from 'data';
 
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Image from 'react-bootstrap/Image';
 
 import LogoLight from 'assets/logo-light.png';
 import LogoDark from 'assets/logo-dark.png';
+
+import { navigation } from 'data/navigation';
+import { contact } from 'data/contact';
 
 export function Header() {
   const location = useLocation();
@@ -32,8 +34,11 @@ export function Header() {
       >
         <Container>
           <Navbar.Brand as={Link} to='/'>
-            <img
-              src={windowIsLarge ? (isScrolled ? LogoDark : LogoLight) : LogoDark}
+            <Image
+              fluid
+              src={
+                windowIsLarge ? (isScrolled ? LogoDark : LogoLight) : LogoDark
+              }
               width='180'
               className='d-inline-block align-top'
               alt='Арнаудовски'

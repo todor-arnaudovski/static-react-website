@@ -12,6 +12,15 @@
     }
   }
 }
+// Sections
+section {
+  &:first-of-type {
+    padding-top: 72px;
+    @include media-breakpoint-up(lg) {
+      padding-top: 115px;
+    }
+  }
+}
 // Buttons
 .btn {
   letter-spacing: 0.1rem;
@@ -50,4 +59,8 @@ a {
 // Borders
 .border-bottom-primary {
   border-bottom: 5px solid $primary;
+}
+// Icons
+.icon-lg {
+  font-size: $font-size-base * 3.2;
 }

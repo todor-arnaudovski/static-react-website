@@ -5,11 +5,13 @@ import LogoLetterImg from 'assets/logo-letter.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 import styles from '../assets/styles/Footer.module.scss';
 
 import { ContentSpacing } from 'components';
 
-import { contact, navigation } from 'data';
+import { navigation } from 'data/navigation';
+import { contact } from 'data/contact';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -25,11 +27,7 @@ export function Footer() {
             <Col lg={3}>
               <div className={`${styles.logo} mb-2 mb-lg-3`}>
                 <Link to='/'>
-                  <img
-                    src={LogoLetterImg}
-                    className='img-fluid'
-                    alt='Арнаудовски'
-                  />
+                  <Image fluid src={LogoLetterImg} alt='Арнаудовски' />
                 </Link>
               </div>
               <div className='text-light'>

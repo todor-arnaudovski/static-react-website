@@ -1,4 +1,10 @@
-export const accordionData = [
+export const hero = {
+  title: 'Една од водечките Адвокатски канцеларии во Македонија',
+  text: 'Адвокатска канцеларија Арнаудовски на своите клиенти им овозможува ефективни и високо квалитетни правни и консултантски услуги. Високиот степен на посветеност, правната експертиза и креативното размислување секогаш ги носи резултатите кои нашите клиенти ги очекуваат.',
+  button: 'Побарај консултација',
+};
+
+export const accordion = [
   {
     title: 'Кои се моите права?',
     text: 'We are successful because we are not like other law firms. Our attorneys are innovators in the area of family law who understand the growing demand for a customized, progressive approach for our clients. We do not waste your time or money. As skilled negotiators inside and outside the courtroom, we work hard to resolve disputes early and amicably when possible. However our top notch trial attorneys are always well prepared to litigate when necessary.',

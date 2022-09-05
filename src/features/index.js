@@ -1,4 +1,4 @@
 export * from './hero';
 export * from './text';
 export * from './about';
-export * from './fieldsList';
+export * from './fieldsSlider';

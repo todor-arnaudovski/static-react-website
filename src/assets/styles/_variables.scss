@@ -23,12 +23,10 @@ $navbar-light-hover-color: $primary;
 $navbar-light-active-color: $primary;
 
 // overwrite buttons variables
-$btn-padding-x: 2rem;
+$btn-padding-x: 1.8rem;
 $btn-padding-y: 1.125rem;
 
-// overwrite link variables
-// $link-color: $light;
-// $link-hover-color: $dark;
+$swiper-pagination-color: red !default;
 
 // import bootstrap to set changes
 @import '~bootstrap/scss/bootstrap';

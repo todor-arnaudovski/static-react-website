@@ -6,24 +6,24 @@ import Col from 'react-bootstrap/Col';
 import Accordion from 'react-bootstrap/Accordion';
 
 import { ContentSpacing, MainTitle, Supertitle } from 'components';
-import { Hero, FieldsList, About } from 'features';
+import { Hero, FieldsSlider, About } from 'features';
 // import BiographySection from './Components/Sections/BiographySection/BiographySection';
 // import WorkFieldSection from './Components/Sections/WorkFieldsSection/WorkFieldsSection';
 // import ContactSection from './Components/Sections/ContactSection/ContactSection';
 
-import { accordionData } from 'data';
+// import { accordionData } from 'data';
 
 export function Home() {
   return (
     <>
       <Hero>
-        <FieldsList />
+        <FieldsSlider />
       </Hero>
       <ContentSpacing as='section' variant='large' background={backgroundImg}>
         <Container>
           <div className='text-center mb-4 mb-lg-5'>
             <Supertitle align='center'>Тука сме за вас</Supertitle>
-            <MainTitle variant='normal'>Знајте ги Вашите права</MainTitle>
+            <h2 className='h2'>Знајте ги Вашите права</h2>
           </div>
           <Row className='gx-5'>
             <Col lg={6}>
@@ -56,7 +56,7 @@ export function Home() {
                 Even if you think the facts of the case aren’t in your favor,
                 having the best possible criminal representation can be.
               </p>
-              <Accordion>
+              {/* <Accordion>
                 {accordionData &&
                   accordionData.map((item, i) => {
                     return (
@@ -66,7 +66,7 @@ export function Home() {
                       </Accordion.Item>
                     );
                   })}
-              </Accordion>
+              </Accordion> */}
             </Col>
           </Row>
         </Container>

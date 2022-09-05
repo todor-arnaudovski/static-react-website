@@ -1,53 +1,44 @@
+import { Link } from 'react-router-dom';
+
 import HeroImg from '../assets/images/hero-bg.jpg';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import styles from '../assets/styles/Hero.module.css';
+import styles from '../assets/styles/Hero.module.scss';
 
-import { MainTitle } from 'components';
+import { hero } from 'data/homePage';
 
 export function Hero({ children }) {
   return (
-    <section className='position-relative h-100'>
-      <div
-        className={`${styles.background} overlay-dark border-bottom-primary`}
-      >
-        <img src={HeroImg} className='img-fluid' alt='Арнаудовски' />
-      </div>
-      <Container>
-        <div
-          className={`${styles['content-wrapper']} d-flex flex-column justify-content-evenly`}
-        >
-          <Row>
-            <Col lg={10}>
-              <div className={`${styles.content} text-light`}>
-                <MainTitle variant='large'>
-                  Една од водечките
-                  <br />
-                  Адвокатски канцеларии во Македонија
-                </MainTitle>
-                <Row className='d-flex align-items-center'>
-                  <Col lg={8}>
-                    <p className='mb-0'>
-                      Адвокатска канцеларија Арнаудовски на своите клиенти им
-                      овозможува ефективни и високо квалитетни правни и
-                      консултантски услуги. Високиот степен на посветеност,
-                      правната експертиза и креативното размислување секогаш ги
-                      носи резултатите кои нашите клиенти ги очекуваат.
-                    </p>
-                  </Col>
-                  <Col lg={4}>
-                    <Button href='#' variant='primary' className='animate'>Побарај консултација</Button>
-                  </Col>
-                </Row>
-              </div>
-            </Col>
-          </Row>
-          {children}
-        </div>
+    <section
+      style={{ backgroundImage: `url(${HeroImg})` }}
+      className={`${styles.hero} d-flex flex-column justify-content-evenly overlay-dark border-bottom-primary text-light`}
+    >
+      <Container className='position-relative mb-3 mb-lg-4'>
+        <Row>
+          <Col xl={10}>
+            <h2 className='display-3 fw-bold'>{hero.title && hero.title}</h2>
+            <Row className='align-items-center'>
+              <Col lg={9}>
+                <p className='mb-3 mb-lg-0'>{hero.text && hero.text}</p>
+              </Col>
+              <Col lg={3}>
+                <Button
+                  as={Link}
+                  to='/kontakt'
+                  variant='primary'
+                  className='animate'
+                >
+                  {hero.button && hero.button}
+                </Button>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </Container>
+      <Container className='position-relative'>{children}</Container>
     </section>
   );
 }
