@@ -8,7 +8,7 @@ import { capitalizeText } from 'helpers';
 export const Banner = (props) => {
   const { children } = props;
 
-  const pageTitle = window.location.pathname.substring(1).split('-').join(' ');
+  const pageTitle = window.location.pathname.substring(1).split('/')[1].split('-').join(' ');
 
   const bannerTitle = capitalizeText(pageTitle);
 
