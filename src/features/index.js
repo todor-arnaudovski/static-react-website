@@ -1,4 +1,3 @@
-export * from './hero';
-export * from './text';
-export * from './about';
 export * from './fieldsSlider';
+export * from './scrollToTop';
+export * from './banner';

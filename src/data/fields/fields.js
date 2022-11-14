@@ -5,27 +5,37 @@ import { FaRegHandshake } from 'react-icons/fa';
 export const fields = [
   {
     icon: <GiPoliceCar />,
-    title: 'Казнено право',
-    text: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    title: 'Fringilla Phasellus',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.',
   },
   {
     icon: <BsPeople />,
-    title: 'Граѓанско право',
-    text: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    title: 'Lobortis Scelerisque',
+    text: 'Vitae tortor condimentum lacinia quis.',
   },
   {
     icon: <BsBriefcase />,
-    title: 'Деловно право',
-    text: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    title: 'Nulla Pellentesque',
+    text: 'Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.',
   },
   {
     icon: <FaRegHandshake />,
-    title: 'Трговско право',
-    text: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    title: 'Vulputate Dignissim',
+    text: 'Posuere sollicitudin aliquam ultrices sagittis.',
   },
   {
     icon: <BsBriefcase />,
-    title: 'Корпоративно право',
-    text: 'Some quick example text to build on the card title and make up the bulk of the card content.',
+    title: 'Suspendisse Tellus',
+    text: 'Leo urna molestie at elementum eu facilisis sed. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor.',
+  },
+  {
+    icon: <BsPeople />,
+    title: 'Quisque Tellus',
+    text: 'Ac turpis egestas sed tempus urna et pharetra pharetra massa.',
+  },
+  {
+    icon: <BsBriefcase />,
+    title: 'Pellentesque Adipiscing',
+    text: 'Feugiat in fermentum posuere urna nec.',
   },
 ];

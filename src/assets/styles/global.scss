@@ -1,4 +1,11 @@
-@import './variables';
+@import './bootstrapVariables';
+// Font utilities
+.font-primary {
+  font-family: $font-primary;
+}
+.font-secondary {
+  font-family: $font-secondary;
+}
 // Navbar
 .navbar {
   transition: all 0.3s ease-out;
@@ -50,7 +57,7 @@ a {
     inset: 0;
     background: linear-gradient(
       0deg,
-      rgba(35, 43, 51, 0.9) 0%,
+      rgba(35, 43, 51, 0.9) 10%,
       rgba(35, 43, 51, 0.3) 40%,
       rgba(14, 14, 14, 0.1) 100%
     );
@@ -62,5 +69,21 @@ a {
 }
 // Icons
 .icon-lg {
-  font-size: $font-size-base * 3.2;
+  font-size: $font-size-base * 1.8;
+  @include media-breakpoint-up(sm) {
+    font-size: $font-size-base * 2.5;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-base * 3.2;
+  }
+}
+// Accordions
+.accordion-header-bold {
+  button {
+    font-weight: 700;
+  }
+}
+// Box shadow
+.shadow-dark {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }

@@ -1,32 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+$font-primary: 'Lora', serif;
+$font-secondary: 'Source Sans Pro', sans-serif;
 
-// overwrite font variables
-$font-family-base: 'Source Sans Pro', sans-serif;
-$headings-font-family: 'Merriweather', serif;
-
-// overwrite theme variables
 $primary: #936249;
 $light: #f1f1f1;
 $dark: #232b33;
 $white: #fff;
-
-// overwrite navbar variables
-$navbar-nav-link-padding-x: 1rem;
-// Dark
-$navbar-dark-color: $white;
-$navbar-dark-hover-color: $primary;
-$navbar-dark-active-color: $primary;
-// Light
-$navbar-light-color: $dark;
-$navbar-light-hover-color: $primary;
-$navbar-light-active-color: $primary;
-
-// overwrite buttons variables
-$btn-padding-x: 1.8rem;
-$btn-padding-y: 1.125rem;
-
-$swiper-pagination-color: red !default;
-
-// import bootstrap to set changes
-@import '~bootstrap/scss/bootstrap';
+$text-muted: #a3b4c3;

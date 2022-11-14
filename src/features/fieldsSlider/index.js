@@ -1,1 +1,1 @@
-export * from './components/FieldsSlider'
+export { FieldsSlider } from './components/FieldsSlider';

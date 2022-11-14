@@ -1,2 +1,2 @@
-export * from './useScrollPosition';
-export * from './useWindowSize';
+export { useScrollPosition } from './useScrollPosition';
+export { useWindowSize } from './useWindowSize';

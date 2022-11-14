@@ -1,18 +1,18 @@
 export const navigation = [
   {
     slug: '',
-    title: 'Почетна',
+    title: 'Home',
   },
   {
-    slug: 'uslugi',
-    title: 'Услуги',
+    slug: 'services',
+    title: 'Services',
   },
   {
-    slug: 'za-nas',
-    title: 'За нас',
+    slug: 'about-us',
+    title: 'About us',
   },
   {
-    slug: 'kontakt',
-    title: 'Контак',
+    slug: 'contact',
+    title: 'Contact',
   },
 ];

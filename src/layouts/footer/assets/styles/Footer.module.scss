@@ -4,7 +4,10 @@
   background-repeat: no-repeat;
 }
 .logo {
-  max-width: 60px;
+  max-width: 120px;
+  &.invert {
+    filter: invert(100%);
+  }
 }
 .copyright {
   padding-top: 2rem;

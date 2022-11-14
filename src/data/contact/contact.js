@@ -3,12 +3,12 @@ import { AiFillPhone, AiFillMail } from 'react-icons/ai';
 export const contact = [
   {
     type: 'tel:',
-    contact: '+389 70 123 456',
+    contact: '+1 23 456 789',
     icon: <AiFillPhone />,
   },
   {
     type: 'mailto:',
-    contact: 'dushko@arnaudovski.com',
+    contact: 'lorem@ipsum.com',
     icon: <AiFillMail />,
   },
 ];

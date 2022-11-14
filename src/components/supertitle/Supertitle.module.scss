@@ -1,36 +1,59 @@
+@import 'assets/styles/variables';
+
+$width: 80px;
+$height: 2px;
+$top: 50%;
+$distance: 90px;
+
 .supertitle {
   display: inline-block;
   position: relative;
   letter-spacing: 0.1rem;
   font-size: 1.125rem;
 }
-.center:before {
-  content: '';
-  height: 2px;
-  width: 80px;
-  background-color: rgb(var(--color-primary));
-  position: absolute;
-  top: 50%;
-  left: -100px;
-}
-.center:after {
-  content: '';
-  height: 2px;
-  width: 80px;
-  background-color: rgb(var(--color-primary));
-  position: absolute;
-  top: 50%;
-  right: -100px;
-}
-.left {
-  padding-left: 110px;
-}
-.left:before {
-  content: '';
-  height: 2px;
-  width: 80px;
-  background-color: rgb(var(--color-primary));
-  position: absolute;
-  top: 50%;
-  left: 0;
+@media (min-width: 768px) {
+  .center {
+    &:before {
+      content: '';
+      height: $height;
+      width: $width;
+      background-color: $primary;
+      position: absolute;
+      top: $top;
+      left: -$distance;
+    }
+    &:after {
+      content: '';
+      height: $height;
+      width: $width;
+      background-color: $primary;
+      position: absolute;
+      top: $top;
+      right: -$distance;
+    }
+  }
+  .left {
+    padding-left: $distance;
+    &:before {
+      content: '';
+      height: $height;
+      width: $width;
+      background-color: $primary;
+      position: absolute;
+      top: $top;
+      left: 0;
+    }
+  }
+  .right {
+    padding-right: $distance;
+    &:before {
+      content: '';
+      height: $height;
+      width: $width;
+      background-color: $primary;
+      position: absolute;
+      top: $top;
+      right: 0;
+    }
+  }
 }

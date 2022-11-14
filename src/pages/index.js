@@ -1,4 +1,4 @@
-export * from './Home';
-export * from './Services';
-export * from './About';
-export * from './Contact';
+export { HomePage } from './HomePage';
+export { ServicesPage } from './ServicesPage';
+export { AboutPage } from './AboutPage';
+export { ContactPage } from './ContactPage';

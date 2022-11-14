@@ -1,0 +1,37 @@
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+@import './variables';
+
+// overwrite font variables
+$headings-font-family: $font-primary;
+$font-family-base: $font-secondary;
+
+// overwrite navbar variables
+$navbar-nav-link-padding-x: 1rem;
+// Dark
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $primary;
+$navbar-dark-active-color: $primary;
+// Light
+$navbar-light-color: $dark;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+
+// overwrite buttons variables
+$btn-font-family: $font-secondary;
+$btn-font-weight: 700;
+$btn-padding-x: 1.8rem;
+$btn-padding-y: 1.125rem;
+
+// overwrite accordion variables
+$accordion-border-width: 0;
+$accordion-border-radius: 0;
+$accordion-inner-border-radius: 0;
+
+// overwite blockquote variables
+// $footer-color:
+
+// import bootstrap to set changes
+@import '~bootstrap/scss/bootstrap';

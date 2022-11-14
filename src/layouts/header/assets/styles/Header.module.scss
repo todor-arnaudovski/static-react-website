@@ -1,0 +1,6 @@
+.logo {
+  max-width: 120px;
+  &.invert {
+    filter: invert(100%)
+  }
+}

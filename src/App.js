@@ -1,24 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'assets/styles/global.scss';
-// import 'assets/styles/custom.scss';
-// import 'assets/styles/global.css';
 
 import { Routes, Route } from 'react-router-dom';
-import { Header } from 'layouts/header';
-import { Footer } from 'layouts/footer';
-import { Home, Services, About, Contact } from 'pages';
+
+import { Layout } from 'layouts';
+import { HomePage, ServicesPage, AboutPage, ContactPage } from 'pages';
 
 function App() {
   return (
     <>
-      <Header />
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/uslugi' element={<Services />}></Route>
-        <Route path='/za-nas' element={<About />}></Route>
-        <Route path='/kontakt' element={<Contact />}></Route>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<HomePage />}></Route>
+          <Route path='/services' element={<ServicesPage />}></Route>
+          <Route path='/about-us' element={<AboutPage />}></Route>
+          <Route path='/contact' element={<ContactPage />}></Route>
+        </Route>
       </Routes>
-      <Footer />
     </>
   );
 }
